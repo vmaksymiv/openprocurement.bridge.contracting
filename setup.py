@@ -5,9 +5,6 @@ version = '0.0.1'
 
 requires = [
     'setuptools',
-]
-
-databridge_requires = requires + [
     'PyYAML',
     'gevent',
     'redis',
@@ -43,6 +40,5 @@ setup(name='openprocurement.bridge.contracting',
       include_package_data=True,
       zip_safe=False,
       install_requires=requires,
-      extras_require={'databridge': databridge_requires},
       entry_points=entry_points,
       )
